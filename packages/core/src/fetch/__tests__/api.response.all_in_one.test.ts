@@ -61,7 +61,7 @@ describe('fetch/api.response.all_in_one', () => {
     expect(watcher.listeners.onFailData).toBeCalledWith(
       preparationError({
         response: 'This is not JSON',
-        reason: 'Unexpected token T in JSON at position 0',
+        reason: 'Unexpected token \'T\', "This is not JSON" is not valid JSON',
       })
     );
   });
